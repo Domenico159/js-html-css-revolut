@@ -21,7 +21,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: #ccc;
+    color: rgb(187, 186, 186);
     transition: color 0.4s;
 }
 
@@ -30,8 +30,45 @@ a:hover{
 }
 
 .container{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
+}
+
+/* Style btn */
+
+a.btn{
+    color: #000;
+    font-weight: 600;
+}
+a.btn-dark{
+    color: #fff;
+}
+
+.btn{
+    padding:12px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.btn-dark{
+    background-color: #000;
+}
+
+/* Card style */
+.card{
+    width: calc(100% / 4 - 20px);
+    display: flex;
+    flex-direction: column;
+}
+.card a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #96a0a8;
+}
+
+.card a:hover{
+    color: #000;
 }
 
 
@@ -42,10 +79,57 @@ header nav {
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
 }
+
+header nav  ul,
+header nav div{
+    display: flex;
+    align-items:center;
+}
+
+/* Nav bar left ******** */
 
 header nav .nav-left ul li{
     margin-right: 20px;
+}
+
+
+/* Nav bar right ********* */
+
+header nav .nav-right ul li{
+    margin-left: 35px;
+    position: relative;
+}
+
+/* Dropdown *******************/
+header nav .nav-right ul .dropdown-big{
+    position: absolute;
+    width: 800px;
+    top: 200%;
+    left: -200px;
+    filter: drop-shadow(0 0 8px  rgba(34, 33, 33,0.1));
+    background: #fff;
+    padding: 20px 20px 50px 10px;
+}
+
+.circle i {
+    color: rgb(241, 240, 240);
+    font-weight: 400px;
+}
+
+.logo-drop h4{
+    color: rgb(160, 160, 160);
+    text-transform: uppercase;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
 }
 
