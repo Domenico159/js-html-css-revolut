@@ -60,12 +60,14 @@ a.btn-dark{
     width: calc(100% / 4 - 20px);
     display: flex;
     flex-direction: column;
+    min-height: 265px;
 }
 .card a{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #96a0a8;
 }
+
 
 .card a:hover{
     color: #000;
@@ -112,6 +114,27 @@ header nav .nav-right ul .dropdown-big{
     padding: 20px 20px 50px 10px;
 }
 
+/* Effect text-up  */
+.text-up{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    color: #ccc;
+}
+.text-up h6{
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(6, 102, 235);
+}
+
+.text-up h6.last{
+    right: 50px;
+}
+
 .circle i {
     color: rgb(241, 240, 240);
     font-weight: 400px;
@@ -120,6 +143,11 @@ header nav .nav-right ul .dropdown-big{
 .logo-drop h4{
     color: rgb(160, 160, 160);
     text-transform: uppercase;
+}
+
+.logo-drop {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .circle{
