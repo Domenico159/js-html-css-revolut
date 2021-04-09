@@ -103,15 +103,20 @@ header nav .nav-right ul li{
     position: relative;
 }
 
+header nav .nav-right > ul > li:hover .dropdown-big{
+    display: flex;
+}
+
 /* Dropdown *******************/
 header nav .nav-right ul .dropdown-big{
     position: absolute;
     width: 800px;
-    top: 200%;
+    top: 100%;
     left: -200px;
     filter: drop-shadow(0 0 8px  rgba(34, 33, 33,0.1));
     background: #fff;
     padding: 20px 20px 50px 10px;
+    display:none;
 }
 
 /* Effect text-up  */
