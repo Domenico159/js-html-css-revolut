@@ -99,24 +99,16 @@ header nav .nav-left ul li{
 
 /* Nav bar right ********* */
 
-header nav .nav-right ul li{
+header nav .nav-right > ul > li{
     margin-left: 35px;
     position: relative;
-}
-
-header nav .nav-right > ul > li:hover .dropdown-big{
-    display: flex;
-}
-
-header nav .nav-right > ul > li:hover .dropdown-small{
-    display: flex;
 }
 
 /* Dropdown *******************/
 header nav .nav-right ul .dropdown-big{
     position: absolute;
     width: 800px;
-    top: 100%;
+    top: 200%;
     left: -200px;
     filter: drop-shadow(0 0 8px  rgba(34, 33, 33,0.1));
     background: #fff;
@@ -128,7 +120,7 @@ header nav .nav-right ul .dropdown-big{
 header nav .nav-right ul .dropdown-small{
     position: absolute;
     width: 150px;
-    top: 100%;
+    top: 200%;
     left: -20px;
     filter: drop-shadow(0 0 8px  rgba(34, 33, 33,0.1));
     background: #fff;
@@ -170,8 +162,9 @@ header nav .nav-right ul .dropdown-small li {
 }
 
 .logo-drop h4{
-    color: rgb(160, 160, 160);
+    color: rgb(180, 180, 180);
     text-transform: uppercase;
+    font-size: 12px;
 }
 
 .logo-drop {
@@ -190,3 +183,10 @@ header nav .nav-right ul .dropdown-small li {
     margin-right: 10px;
 }
 
+
+/* ************************************************ */
+/* Effect jQuery */
+header nav .nav-right ul.dropdown-big.active,
+header nav .nav-right ul.dropdown-small.active{
+    display: flex;
+}
