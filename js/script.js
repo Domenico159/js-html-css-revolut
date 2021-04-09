@@ -13,6 +13,8 @@ var drop2 = $('header .nav-right ul.dropdown-small.drop-2');
 
 var drop3 = $('header .nav-right ul.dropdown-small.drop-3');
 
+var header = $('header') ;
+
 
 
 
@@ -26,7 +28,7 @@ console.log(allLink);
 
     var indexElement = thisElement.index() ;
 
-    console.log(indexElement);
+    // console.log(indexElement);
 
     
 
@@ -65,6 +67,8 @@ console.log(allLink);
 
 
   } );
+
+  // Mouse leave
       
       dropBig.mouseleave( function() {
 
@@ -89,6 +93,17 @@ console.log(allLink);
         drop3.removeClass('active');
 
       } );
+
+        header.mouseleave( function() {
+      
+        dropBig.removeClass('active');
+        drop1.removeClass('active');
+        drop2.removeClass('active');
+        drop3.removeClass('active');
+
+      } );
+
+
 
     //   Mouse enter
 
