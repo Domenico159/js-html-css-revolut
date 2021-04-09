@@ -74,6 +74,7 @@ a.btn-dark{
 }
 
 
+
 /* Nav bar ***************************** */
 
 header nav {
@@ -107,6 +108,10 @@ header nav .nav-right > ul > li:hover .dropdown-big{
     display: flex;
 }
 
+header nav .nav-right > ul > li:hover .dropdown-small{
+    display: flex;
+}
+
 /* Dropdown *******************/
 header nav .nav-right ul .dropdown-big{
     position: absolute;
@@ -117,6 +122,25 @@ header nav .nav-right ul .dropdown-big{
     background: #fff;
     padding: 20px 20px 50px 10px;
     display:none;
+    border-radius: 10px;
+}
+
+header nav .nav-right ul .dropdown-small{
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: -20px;
+    filter: drop-shadow(0 0 8px  rgba(34, 33, 33,0.1));
+    background: #fff;
+    padding:10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    display: none;
+}
+header nav .nav-right ul .dropdown-small li {
+    margin-top: 20px;
 }
 
 /* Effect text-up  */
